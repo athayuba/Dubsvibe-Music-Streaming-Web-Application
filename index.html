@@ -1,0 +1,34 @@
+<!-- Home Page (index.html) -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dubsvibe Music Streaming</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Dubsvibe Music Streaming</h1>
+
+<table>
+    <tr>
+        <th>Song</th>
+        <th>Artist</th>
+        <th>Play</th>
+    </tr>
+
+    {% for song in songs %}
+    <tr>
+        <td>{{ song['title'] }}</td>
+        <td>{{ song['artist'] }}</td>
+        <td>
+            <a href="/play/{{ song['id'] }}">Play</a>
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>

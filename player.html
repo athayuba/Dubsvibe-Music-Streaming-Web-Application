@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>{{ song['title'] }}</h2>
+
+<p>Artist : {{ song['artist'] }}</p>
+
+<audio controls>
+    <source src="/static/music/{{ song['file_path'] }}" type="audio/mp3">
+</audio>
+
+<br><br>
+
+<a href="/">Back to Home</a>
+
+</body>
+
+</html>
