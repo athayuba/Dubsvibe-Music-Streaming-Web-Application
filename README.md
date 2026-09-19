@@ -17,8 +17,6 @@ A music streaming web application developed using Python and Flask. The applicat
 - SQLite
 - HTML
 - CSS
-- JavaScript
-
 ## Project Structure
 
 ```text
